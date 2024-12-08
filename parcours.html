@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styleparcours.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+        <div class="container">
+          <a class="navbar-brand mx-auto" href="index.html">
+            <img src="./assets/profile2.jpg" alt="Photo de profil" class="navbar-profile-pic">
+            Sofien Portfolio
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="parcours.html">Parcours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="passions.html">Passions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="competences.html">Compétences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projets.html">Projets</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+  <!-- Conteneur pour la barre de navigation -->
+  <div id="navbar-container"></div>
+
+  <!-- Contenu principal -->
+  <section id="about">
+    <p class="section__text__p1"> A propos de Sofien</p>
+    <h1 class="title">A propos de moi</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/profil.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Education</h3>
+            <p><h3>Bac :</h3> Mathematique</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Education icon" class="icon" />
+            <h3>Liscence</h3>
+            <p>Developpement systéme Informatique<br /> <h3>Iset Sfax</h3></p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Je suis Sofien Ayedi, un jeune diplômé de l’ISET avec une solide expertise en <strong>développement web</strong>, 
+            . Avant cela, j’ai obtenu mon baccalauréat en <strong>Mathématiques</strong>, renforçant ainsi mes compétences analytiques et ma capacité à résoudre des problèmes complexes.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./Passions.html'" />
+  </section>
+
+  <!-- Charger la barre de navigation avec JavaScript -->
+  <script>
+    // Fonction pour charger la barre de navigation
+    function loadNavbar() {
+      fetch('navbar.html')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Erreur lors du chargement de navbar.html');
+          }
+          return response.text();  // Convertir la réponse en texte
+        })
+        .then(data => {
+          document.getElementById('navbar-container').innerHTML = data; // Insérer le contenu dans le div
+        })
+        .catch(error => {
+          console.error('Erreur de chargement de la navbar:', error);
+        });
+    }
+
+    // Charger la navbar dès que la page est chargée
+    window.onload = loadNavbar;  // Assurez-vous que la fonction est appelée au chargement de la page
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

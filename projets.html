@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>My Portfolio</title>
+      <link rel="stylesheet" href="styleprojets.css" />
+      <link rel="stylesheet" href="mediaqueries.css" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center fixed-top">
+        <div class="container">
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img src="./assets/profile2.jpg" alt="Photo de profil" class="navbar-profile-pic">
+                Sofien Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="parcours.html">Parcours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="passions.html">Passions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="competences.html">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projets.html">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="projects">
+        <p class="section__text__p1">Mes Projets</p>
+        <h1 class="title">Projets</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <!-- Project 1 -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">
+                Projet 1 : Ergonomie d'une application Web
+              </h2>
+              <p>
+                Ce projet consistait à moderniser et améliorer l'ergonomie d'une application Web destinée à la gestion des factures et des paramètres d'entreprise. 
+                Réalisé avec <strong>ASP.NET</strong> pour le backend et <strong>Angular</strong> pour le frontend, le projet comprenait :
+              </p>
+              <ul>
+                <li>Analyse de l'application existante.</li>
+                <li>Refonte de l'interface utilisateur pour une navigation intuitive.</li>
+                <li>Ajout de fonctionnalités interactives comme des tableaux dynamiques.</li>
+                <li>Tests approfondis pour garantir la compatibilité avec plusieurs navigateurs.</li>
+              </ul>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">
+                Projet 2 : Développement d'une application mobile
+              </h2>
+              <p>
+                L'objectif de ce projet était de créer une application mobile multi-plateforme pour la gestion des tâches quotidiennes. Développé en <strong>Flutter</strong>, le projet incluait :
+              </p>
+              <ul>
+                <li>Conception d'une interface utilisateur minimaliste et responsive.</li>
+                <li>Implémentation de la gestion des tâches .</li>
+                <li>Intégration d'une base de données SQLite pour stocker les données localement.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./contact.html'"
+        />
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+      </body>

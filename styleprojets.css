@@ -1,0 +1,173 @@
+    /* Style Général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  #projects {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .section__text__p1 {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin: 20px 0;
+  }
+  
+  /* Conteneur principal des projets */
+  .experience-details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  /* Conteneur des projets */
+  .details-container {
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .details-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .project-title {
+    font-size: 1.6rem;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  .details-container p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin: 5px 0;
+  }
+  
+  /* Flèche de navigation */
+  .arrow {
+    width: 50px;
+    height: auto;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .arrow:hover {
+    transform: translateY(-5px);
+  }
+  /* Navbar Styles */
+.navbar {
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .navbar.fixed-top {
+    background-color: transparent; /* Transparent on top */
+    box-shadow: none;
+  }
+  
+  .navbar.scrolled {
+    background-color: #343a40; /* Dark background on scroll */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #ffc107; /* Optional border for highlight */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #f8f9fa; /* Default text color */
+    padding: 8px 15px;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffc107; /* Highlight color */
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: #ffc107; /* Active link color */
+    border-bottom: 2px solid #ffc107; /* Highlight underline */
+  }
+  
+  
+  /* Styles Responsives */
+  @media screen and (max-width: 768px) {
+    .experience-details-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .details-container {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .title {
+      font-size: 2rem;
+    }
+  
+    .project-title {
+      font-size: 1.4rem;
+    }
+  
+    .details-container {
+      width: 100%;
+    }
+  
+    .project-img {
+      height: 250px;
+      object-fit: cover;
+    }
+  
+    .arrow {
+      width: 40px;
+    }
+  }
+  

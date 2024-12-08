@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: grey;
+}
+.app{
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 15px;
+    padding: 30px;
+}
+.app h1{
+    font-size: 25px;
+    color: #001e4d;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+}
+.quiz{
+    padding: padding 20px 0;
+}
+#question{
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover:not([disabled]){
+    background: #222;
+    color: #fff;
+}
+.retour-btn {
+    background-color: #f04e30; /* Couleur de fond (orange/rouge) */
+    color: #ffffff;           /* Couleur du texte */
+    border: none;             /* Supprime les bordures */
+    border-radius: 8px;       /* Coins arrondis */
+    padding: 10px 20px;       /* Espacement interne */
+    font-size: 16px;          /* Taille de la police */
+    font-weight: bold;        /* Texte en gras */
+    cursor: pointer;          /* Curseur changeant */
+    transition: all 0.6s ease-in-out; /* Animation pour hover */
+  }
+  
+  .retour-btn:hover {
+    background-color: #d53b1f; /* Couleur survol */
+    transform: scale(1.1);     /* Effet d'agrandissement */
+  }
+  
+  .retour-btn:active {
+    transform: scale(0.95);    /* Effet enfoncé */
+    background-color: #bf2e14; /* Couleur active */
+  }
+  
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn{
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+.correct{
+    background: #9aeabc;
+}
+.incorrect{
+    background: #ff9393;
+}
